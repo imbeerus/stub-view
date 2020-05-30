@@ -1,13 +1,11 @@
-# usual-divider
+# stub-view
 
 [![API](https://img.shields.io/badge/API-14%2B-orange.svg)](https://android-arsenal.com/api?level=14)
 [![License](https://img.shields.io/badge/license-Apache%202-red.svg?logo=license)](https://www.apache.org/licenses/LICENSE-2.0)
-![Android CI](https://github.com/lndmflngs/usual-divider/workflows/Android%20CI/badge.svg?branch=master)
-[![](https://jitpack.io/v/lndmflngs/usual-divider.svg)](https://jitpack.io/#lndmflngs/usual-divider)
+![Android CI](https://github.com/lndmflngs/stub-view/workflows/Android%20CI/badge.svg?branch=master)
+[![](https://jitpack.io/v/lndmflngs/stub-view.svg)](https://jitpack.io/#lndmflngs/stub-view)
 
-Simplest divider for placing between views
-
-<img src="https://github.com/lndmflngs/usual-divider/blob/master/screenshot/1.png?raw=true" width="25%" />
+<img src="https://raw.githubusercontent.com/lndmflngs/stub-view/master/art/showcase.png" width="35%" />
 
 ## Download
 Download the [latest release][1] or grab via Gradle:
@@ -22,7 +20,7 @@ allprojects {
 ```
 ```
 dependencies {
-        implementation 'com.github.lndmflngs:usual-divider:1.1.3'
+        implementation 'com.github.lndmflngs:stub-view:1.0.0'
 }
 ```
 
@@ -44,4 +42,4 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-[1]: https://github.com/lndmflngs/usual-divider/releases/latest
+[1]: https://github.com/lndmflngs/stub-view/releases/latest

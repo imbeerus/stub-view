@@ -1,10 +1,13 @@
-package com.lockwood.divider.extensions
+package com.lockwood.stub.extenions
 
 import android.content.Context
 import android.content.res.TypedArray
+import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import androidx.annotation.AttrRes
 import androidx.annotation.StyleRes
+import androidx.appcompat.content.res.AppCompatResources
+import androidx.core.content.res.getResourceIdOrThrow
 
 internal inline fun fetchAttrs(
     context: Context,
@@ -29,18 +32,11 @@ internal inline fun fetchAttrs(
     }
 }
 
-internal inline fun fetchAndroidAttrs(
-    context: Context,
-    vararg attrs: Int,
-    set: AttributeSet? = null,
-    fetch: TypedArray .() -> Unit = {}
-) {
-    val typedArray = context.obtainStyledAttributes(set, attrs)
-    with(typedArray) {
-        try {
-            fetch()
-        } finally {
-            recycle()
-        }
+internal fun TypedArray.getDrawableCompat(context: Context, index: Int): Drawable? {
+    return try {
+        val resId = getResourceIdOrThrow(index)
+        AppCompatResources.getDrawable(context, resId)
+    } catch (e: Exception) {
+        null
     }
 }

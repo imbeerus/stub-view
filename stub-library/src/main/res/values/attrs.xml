@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StubView">
+        <attr name="drawable" format="reference" />
+        <attr name="drawableTint" format="color" />
+        <attr name="drawableSize" format="dimension" />
+        <attr name="drawablePosition" format="enum">
+            <enum name="top" value="1" />
+            <enum name="bottom" value="3" />
+        </attr>
+    </declare-styleable>
+
+</resources>

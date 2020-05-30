@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
 
-    <com.lockwood.divider.DividerView
-        android:layout_width="wrap_content"
+    <com.lockwood.stub.StubView
+        android:id="@+id/stub"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        app:dividerOrientation="horizontal"
-        app:dividerSize="0.5dp" />
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Oops, No internet connection"
+        app:drawable="@drawable/ic_cloud_off"
+        app:drawableSize="200dp"
+        app:drawableTint="?colorPrimary" />
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/button_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change position" />
+
+        <Button
+            android:id="@+id/button_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Random size" />
+
+        <Button
+            android:id="@+id/button_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Random color" />
+
+    </LinearLayout>
+
+</FrameLayout>

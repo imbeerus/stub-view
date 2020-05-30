@@ -1,2 +1,2 @@
-rootProject.name = 'usual-divider'
-include ':app', ':divider-library'
+include ':app', ':stub-library'
+rootProject.name = 'stub-view'

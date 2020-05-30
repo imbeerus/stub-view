@@ -1,4 +1,5 @@
 apply from: rootProject.file('gradle/android/app.gradle')
+apply from: rootProject.file('gradle/kotlin/target.gradle')
 apply from: rootProject.file('gradle/deps.gradle')
 
 dependencies {
@@ -7,5 +8,5 @@ dependencies {
             deps.android.appcompat
     )
 
-    implementation project(':divider-library')
+    implementation project(':stub-library')
 }
