@@ -1,6 +1,6 @@
 # stub-view
 
-[![API](https://img.shields.io/badge/API-14%2B-orange.svg)](https://android-arsenal.com/api?level=14)
+[![API](https://img.shields.io/badge/API-14%2B-orange.svg)](https://android-arsenal.com/api?level=16)
 [![License](https://img.shields.io/badge/license-Apache%202-red.svg?logo=license)](https://www.apache.org/licenses/LICENSE-2.0)
 ![Android CI](https://github.com/lndmflngs/stub-view/workflows/Android%20CI/badge.svg?branch=master)
 [![](https://jitpack.io/v/lndmflngs/stub-view.svg)](https://jitpack.io/#lndmflngs/stub-view)
