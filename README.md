@@ -20,7 +20,7 @@ allprojects {
 ```
 ```
 dependencies {
-        implementation 'com.github.lndmflngs:stub-view:1.0.1'
+        implementation 'com.github.lndmflngs:stub-view:1.0.0'
 }
 ```
 
